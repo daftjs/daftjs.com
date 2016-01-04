@@ -1,0 +1,36 @@
+{
+  "name": "daft",
+  "version": "0.1.6",
+  "homepage": "http://daftjs.com",
+  "authors": [
+    "Jesse Weed <jesse@jesseweed.com>"
+  ],
+  "description": "An isomorphic JavaScript framework.",
+  "main": "dist/daft.js",
+  "keywords": [
+    "daft",
+    "js",
+    "javascript",
+    "isomorphic",
+    "framework"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "bin",
+    "gulpfile.js",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "_release": "0.1.6",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.6",
+    "commit": "efcfdb7f5a32bbfcae45271fd452d96e271f2977"
+  },
+  "_source": "git://github.com/daftjs/daft.git",
+  "_target": "~0.1.6",
+  "_originalSource": "daft",
+  "_direct": true
+}

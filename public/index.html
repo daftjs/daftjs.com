@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Daft.js</title>
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css"> -->
+    <link rel="stylesheet" href="/components/material-design-lite/material.css">
+    <link rel="stylesheet" href="/lib/prism.css">
+    <link rel="stylesheet" href="/css/daft.css">
+    <script src="/components/requirejs/require.js"></script>
+  </head>
+  <body>
+
+    <section>
+      <h1>Daft</h1>
+      <p>
+        An uber-modern, probably wont work in your mum's browser, isomorphic-friendly JavaScript framework.
+      </p>
+
+      <br>
+
+      <h2>Install</h2>
+
+      <pre><code class="language-console">$ bower install daft</code></pre>
+    </section>
+
+    <br>
+
+    <section>
+      <p content-data="message"></p>
+    </section>
+
+    <section namespace="catAndMouse">
+
+      <h2 catAndMouse-data="title">Try it out</h2>
+      <p>
+        Click or tap on anything with an underline to edit.
+      </p>
+
+      <h4>I have a cat named <span contentEditable="true" catAndMouse-data="cat" daft-update="catAndMouse">Tom</span> and a mouse named <span contentEditable="true" catAndMouse-data="mouse" daft-update="catAndMouse">Jerry</span>.</h4>
+
+      <p>
+        You'll notice if you change the name of the cat or the mouse above, it is automatically reflected below.
+      </p>
+
+      <div class="animal">
+        <h5>Hello, my name is <span catAndMouse-data="cat"></span></h5>
+        <img src="img/cat.jpg" />
+      </div>
+
+      <div class="animal">
+        <h5>Hello, my name is <span catAndMouse-data="mouse"></span></h5>
+        <img src="img/mouse.jpg" />
+      </div>
+
+    </section>
+
+
+    <section namespace="code">
+
+      <br><br>
+
+      <h3>The Code</h3>
+
+      <p>
+        The above is a super simple example, and is equally as simple to implement:
+      </p>
+
+      <h5>Javascript</h5>
+    <pre>
+  <code class="language-javascript">Daft.Namespace('catAndMouse', {
+    domData: {
+      cat: {
+        data: 'Tom'
+      },
+      mouse: {
+        data: 'Jerry'
+      }
+    }
+  })</code></pre>
+
+      <h5>HTML</h5>
+      <pre>
+  <code class="language-html">&lt;section namespace="catAndMouse"&gt;
+    &lt;h5>
+    I have a cat named &lt;span contentEditable="true" catAndMouse-data="cat&gt;Tom&lt;/span>
+    and a mouse named &lt;span contentEditable="true" catAndMouse-data="mouse&gt;Jerry&lt;/span>.
+    &lt;/h5&gt;
+
+    &lt;div class="animal"&gt;
+      &lt;h6>Hello, my name is &lt;span catAndMouse-data="cat">&lt;/span>&lt;/h6&gt;
+      &lt;img src="img/cat.jpg" /&gt;
+    &lt;/div&gt;
+
+    &lt;div class="animal"&gt;
+      &lt;h6>Hello, my name is &lt;span catAndMouse-data="mouse">&lt;/span>&lt;/h6&gt;
+      &lt;img src="img/mouse.jpg" /&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;</code></pre>
+    </section>
+
+    <script src="/lib/prism.js"></script>
+    <script src="/components/material-design-lite/material.js"></script>
+    <script src="/components/daft/dist/daft.js"></script>
+
+    <script>
+      // requirejs(['js/header.js']);
+      // hljs.initHighlightingOnLoad();
+      requirejs(['js/demo.js']);
+    </script>
+
+
+  </body>
+</html>
