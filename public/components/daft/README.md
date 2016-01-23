@@ -7,9 +7,9 @@
 [![npm downloads](https://img.shields.io/npm/dt/daft.svg?style=flat-square)]()
 
 
-An uber-modern, probably wont work in your mum's browser, isomorphic-friendly JavaScript framework.
+A tiny (22k), über-modern, probably wont work in your mum's browser, isomorphic-friendly JavaScript framework.
 
-[ WIP ]
+*[ Work In Progress ]*
 
 ##### NPM
 `npm install daft`
@@ -18,6 +18,11 @@ An uber-modern, probably wont work in your mum's browser, isomorphic-friendly Ja
 `bower install daft`
 
 ##### ^ Do not do any of this yet as it will probably break and make you cry.
+
+---
+
+## Try it out
+[http://codepen.io/anon/pen/gPgdea](http://codepen.io/anon/pen/gPgdea)
 
 ---
 

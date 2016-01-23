@@ -1,6 +1,6 @@
 {
   "name": "daft",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "homepage": "http://daftjs.com",
   "authors": [
     "Jesse Weed <jesse@jesseweed.com>"
@@ -18,19 +18,21 @@
   "ignore": [
     "**/.*",
     "bin",
+    "bower_components",
+    "docs",
     "gulpfile.js",
     "node_modules",
-    "bower_components",
+    "public",
+    "src",
     "test"
   ],
-  "_release": "0.1.6",
+  "_release": "0.2.0",
   "_resolution": {
     "type": "version",
-    "tag": "v0.1.6",
-    "commit": "efcfdb7f5a32bbfcae45271fd452d96e271f2977"
+    "tag": "v0.2.0",
+    "commit": "d714e9e4bda133682966229b06b9d97bdd5bb5a9"
   },
   "_source": "git://github.com/daftjs/daft.git",
-  "_target": "~0.1.6",
-  "_originalSource": "daft",
-  "_direct": true
+  "_target": "~0.2.0",
+  "_originalSource": "daft"
 }
